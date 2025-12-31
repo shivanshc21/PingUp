@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
+    "fs": "^0.0.1-security",
     "imagekit": "^6.0.0",
     "inngest": "^3.48.1",
     "mongoose": "^9.0.2",
