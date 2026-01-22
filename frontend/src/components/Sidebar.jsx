@@ -1,15 +1,14 @@
-import React from 'react'
-import { assets, dummyUserData } from '../assets/assets'
-import { Link, useNavigate } from 'react-router-dom'
-import MenuItems from './MenuItems'
-import { CirclePlus, LogOut } from 'lucide-react'
-import { UserButton, useClerk } from '@clerk/clerk-react'
+import React from "react";
+import { assets, dummyUserData } from "../assets/assets";
+import { Link, useNavigate } from "react-router-dom";
+import MenuItems from "./MenuItems";
+import { CirclePlus, LogOut } from "lucide-react";
+import { UserButton, useClerk } from "@clerk/clerk-react";
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
-
-  const user = dummyUserData
-  const { signOut } = useClerk()
-  const navigate = useNavigate()
+  const user = dummyUserData;
+  const { signOut } = useClerk();
+  const navigate = useNavigate();
 
   return (
     <div
@@ -17,7 +16,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
         w-60 xl:w-72 bg-white border-r border-gray-200
         flex flex-col h-screen justify-between items-center
         max-sm:absolute top-0 bottom-0 z-20
-        ${sidebarOpen ? 'translate-x-0' : 'max-sm:-translate-x-full'}
+        ${sidebarOpen ? "translate-x-0" : "max-sm:-translate-x-full"}
         transition-all duration-300 ease-in-out
       `}
     >
@@ -26,7 +25,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
         <img
           src={assets.logo}
           alt="Logo"
-          onClick={() => navigate('/')}
+          onClick={() => navigate("/")}
           className="w-24 ml-7 my-2 cursor-pointer"
         />
 
@@ -67,7 +66,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

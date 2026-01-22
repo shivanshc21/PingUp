@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Seymour+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Seymour+One&display=swap");
 
 @import "tailwindcss";
 
-*{
-    font-family: "PT Sans", sans-serif;
+* {
+  font-family: "PT Sans", sans-serif;
 }
 
-.no-scrollbar::-webkit-scrollbar{
+.no-scrollbar::-webkit-scrollbar {
   display: none;
 }
